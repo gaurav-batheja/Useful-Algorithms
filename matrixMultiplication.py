@@ -41,3 +41,17 @@ def mat_mul(A,B):
     for j in range(dim):
       C[i][j]=dot_product(row(A,i),column(B,j))
   return(C)
+
+
+
+#using numpy
+import numpy
+a=[[0,1,2],[3,4,5],[6,7,8]]
+b=[[9,10,11],[12,13,14],[15,16,17]]
+print(a)
+a=numpy.mat(a)
+b=numpy.mat(b)
+c=a*b
+print(c)
+for i in c:
+  print(i)
